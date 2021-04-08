@@ -1,0 +1,13 @@
+/* Add your styles here */
+
+.margen{
+  padding:40px;
+}
+
+.margen2{
+  padding:30px;
+}
+
+.container-logo > .img-responsive{
+    margin: 0 auto;
+}
