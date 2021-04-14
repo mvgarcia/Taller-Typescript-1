@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center margen border">María Valentina García Alvarado</h1>
+    <div class="container" style="background-color: rgb(218, 237, 240)">
+        <h1 class="text-center margen border ">María Valentina García Alvarado</h1>
         <div class="row margen2">
             <div class="col margen2">
                 <img class="img-fluid max-width: 100% height:auto " src="./photo.jpg" alt="Avatar">`
@@ -24,27 +24,7 @@
                                 <th>Datos personales</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Código</td>
-                                <td>201813544</td>
-                            </tr>
-                            <tr>
-                                <td>Cédula</td>
-                                <td>1193441965</td>
-                            </tr>
-                            <tr>
-                                <td>Edad</td>
-                                <td>20 Años</td>
-                            </tr>
-                            <tr>
-                                <td>Dirección</td>
-                                <td>Calle 70a #91a-73</td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono</td>
-                                <td>3134059779</td>
-                            </tr>
+                        <tbody id="infoStudent">
                         </tbody>
                     </table>
                 </div>
@@ -54,12 +34,26 @@
                     <h2>Cursos Actuales</h2>
                     <form style="margin:10px;">
                         <div class="form-row">
-                          <div class="col">
-                              <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
-                          </div>
-                          <div class="col">
-                              <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
-                          </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="search-box"
+                                    placeholder="Filtrar por nombre">
+                            </div>
+                            <div class="col">
+                                <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="search-box-min"
+                                    placeholder="Minimo">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="search-box-max"
+                                    placeholder="Maximo">
+                            </div>
+                            <div class="col">
+                                <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                            </div>
                         </div>
                     </form>
                     <table class="table">
@@ -77,7 +71,7 @@
                         <h2 class="text-center margen2">Total Créditos: </h2>
                         <h2 class="text-center margen2" id="total-credits"></h2>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
